@@ -2,7 +2,7 @@ import turtle
 turtle.showturtle()
 turtle.shape("classic")
 
-def estrella(turtle, n, d=100):
+def estrella(n, d=100):
     angulo=360/n
     if n%2==0:
         lineas=[]
