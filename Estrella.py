@@ -1,8 +1,15 @@
 import turtle
-def estrella(turtle, n, d):
-    angulo=(180-((180*(n-2)))/n)*2
-    for i in range(n):
-        turtle.forward(d)
-        turtle.left(144)
+turtle.showturtle()
+turtle.shape("classic")
 
-    return angulo
+def estrella(turtle, n, d=100):
+    angulo=360/n
+    if n%2==0:
+        puntas=[]
+        for a in range(0, n):
+            turtle.penup()
+            puntas.append(turtle.pos())
+            turtle.circle(d, angulo)
+    
+
+        return angulo
