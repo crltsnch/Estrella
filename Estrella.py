@@ -1,5 +1,6 @@
 import turtle
-turtle.showturtle()
+turtle.getscreen()
+
 turtle.shape("classic")
 
 def estrella(n, d=100):
@@ -14,3 +15,4 @@ def estrella(n, d=100):
             if b%2==0:
                 turtle.pendown()
                 turtle.goto(lineas[b][0], lineas[b],[1])
+    
